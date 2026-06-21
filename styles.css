@@ -1,0 +1,68 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(270deg, #ff512f, #dd2476, #24c6dc, #514a9d);
+    background-size: 600% 600%;
+    animation: fondo 12s ease infinite;
+    text-align: center;
+    color: white;
+}
+
+@keyframes fondo {
+    0% {background-position:0%}
+    50% {background-position:100%}
+    100% {background-position:0%}
+}
+
+h1 {
+    margin-top: 20px;
+    text-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+#controls {
+    margin: 15px;
+}
+
+button, select {
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    font-size: 16px;
+    margin: 5px;
+    cursor: pointer;
+    background: white;
+    font-weight: bold;
+}
+
+#board {
+    display: grid;
+    grid-template-columns: repeat(3, 120px);
+    gap: 12px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.cell {
+    width: 120px;
+    height: 120px;
+    background: white;
+    color: black;
+    font-size: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.4);
+}
+
+.cell:hover {
+    transform: scale(1.1);
+    background: #f1f1f1;
+}
+
+#status {
+    margin-top: 20px;
+    font-size: 22px;
+    font-weight: bold;
+}
